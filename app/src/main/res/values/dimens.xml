@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <!--all size "dp"-->
+  <dimen name="margin_top_hint_team_name">16dp</dimen>
+  <dimen name="main_linear_layout_padding">8dp</dimen>
+  <dimen name="margin_button_goal">16dp</dimen>
+
+
+  <!--all size "sp"-->
+  <dimen name="text_size_hint_team_name">30sp</dimen>
+  <dimen name="score_0_text_size">60sp</dimen>
+  <dimen name="all_text_size">18sp</dimen>
+  <dimen name="yellow_and_red_score_text_size">22sp</dimen>
+</resources>

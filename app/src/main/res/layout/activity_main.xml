@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:padding="6dp"
+  android:background="@color/colorPrimary"
+  android:orientation="vertical"
+  tools:context="com.example.android.scorekeeperapp.MainActivity">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="true">
+
+    <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:padding="@dimen/main_linear_layout_padding"
+      android:orientation="vertical">
+
+      <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/team_a_hint_edit_text"
+        android:textAlignment="center"
+        android:textColor="@color/all_text_color"
+        android:textColorHint="@color/all_text_color"
+        android:textSize="@dimen/text_size_hint_team_name"/>
+
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/goal_score_text_view"
+        android:textColor="@color/all_text_color"
+        android:textSize="@dimen/yellow_and_red_score_text_size"/>
+
+      <TextView
+        android:id="@+id/score_team_a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/score_team_a_text_view"
+        android:textColor="@color/all_text_color"
+        android:textSize="@dimen/score_0_text_size"/>
+
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/cards_color_types"
+        android:textColor="@color/all_text_color"
+        android:textSize="@dimen/all_text_size"/>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/main_linear_layout_padding"
+        android:orientation="horizontal">
+
+        <TextView
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:layout_marginTop="@dimen/main_linear_layout_padding"
+          android:text="@string/yellow_card_text_view"
+          android:textColor="@color/all_text_color"
+          android:textSize="@dimen/all_text_size"/>
+
+        <TextView
+          android:id="@+id/yellow_score_team_a"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:layout_marginTop="@dimen/main_linear_layout_padding"
+          android:gravity="end"
+          android:text="@string/score_team_a_text_view"
+          android:textColor="@color/all_text_color"
+          android:textSize="@dimen/all_text_size"/>
+
+      </LinearLayout>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/main_linear_layout_padding"
+        android:orientation="horizontal">
+
+        <TextView
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:layout_marginTop="@dimen/main_linear_layout_padding"
+          android:text="@string/red_card_text_view"
+          android:textColor="@color/all_text_color"
+          android:textSize="@dimen/all_text_size"/>
+
+        <TextView
+          android:id="@+id/red_score_team_a"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:layout_marginTop="@dimen/main_linear_layout_padding"
+          android:gravity="end"
+          android:text="@string/score_team_a_text_view"
+          android:textColor="@color/all_text_color"
+          android:textSize="@dimen/all_text_size"/>
+
+      </LinearLayout>
+
+      <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_button_goal"
+        android:background="@color/colorAccent"
+        android:onClick="increase_score_team_a"
+        android:text="@string/goal_text_button"
+        android:textColor="@color/all_text_color"
+        android:textSize="@dimen/all_text_size"/>
+
+      <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_button_goal"
+        android:background="@color/colorAccent"
+        android:onClick="increase_yellow_score_team_a"
+        android:text="@string/yellow_card_button_name"
+        android:textColor="@color/all_text_color"
+        android:textSize="@dimen/all_text_size"/>
+
+      <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_button_goal"
+        android:background="@color/colorAccent"
+        android:onClick="increase_red_score_team_a"
+        android:text="@string/red_card_button_name"
+        android:textColor="@color/all_text_color"
+        android:textSize="@dimen/all_text_size"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:padding="@dimen/main_linear_layout_padding"
+      android:orientation="vertical">
+
+      <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/team_b_hint_edit_text"
+        android:textAlignment="center"
+        android:textColor="@color/all_text_color"
+        android:textColorHint="@color/all_text_color"
+        android:textSize="@dimen/text_size_hint_team_name"/>
+
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/goal_score_text_view"
+        android:textColor="@color/all_text_color"
+        android:textSize="@dimen/yellow_and_red_score_text_size"/>
+
+      <TextView
+        android:id="@+id/score_team_b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/score_team_b_text_view"
+        android:textColor="@color/all_text_color"
+        android:textSize="@dimen/score_0_text_size"/>
+
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/cards_color_types"
+        android:textColor="@color/all_text_color"
+        android:textSize="@dimen/all_text_size"/>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/main_linear_layout_padding"
+        android:orientation="horizontal">
+
+        <TextView
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:layout_marginTop="@dimen/main_linear_layout_padding"
+          android:text="@string/yellow_card_text_view"
+          android:textColor="@color/all_text_color"
+          android:textSize="@dimen/all_text_size"/>
+
+        <TextView
+          android:id="@+id/yellow_score_team_b"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:layout_marginTop="@dimen/main_linear_layout_padding"
+          android:gravity="end"
+          android:text="@string/score_team_b_text_view"
+          android:textColor="@color/all_text_color"
+          android:textSize="@dimen/all_text_size"/>
+
+      </LinearLayout>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/main_linear_layout_padding"
+        android:orientation="horizontal">
+
+        <TextView
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:layout_marginTop="@dimen/main_linear_layout_padding"
+          android:text="@string/red_card_text_view"
+          android:textColor="@color/all_text_color"
+          android:textSize="@dimen/all_text_size"/>
+
+        <TextView
+          android:id="@+id/red_score_team_b"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:layout_marginTop="@dimen/main_linear_layout_padding"
+          android:gravity="end"
+          android:text="@string/score_team_b_text_view"
+          android:textColor="@color/all_text_color"
+          android:textSize="@dimen/all_text_size"/>
+
+      </LinearLayout>
+
+      <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_button_goal"
+        android:background="@color/colorAccent"
+        android:onClick="increase_score_team_b"
+        android:text="@string/goal_text_button"
+        android:textColor="@color/all_text_color"
+        android:textSize="@dimen/all_text_size"/>
+
+      <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_button_goal"
+        android:background="@color/colorAccent"
+        android:onClick="increase_yellow_score_team_b"
+        android:text="@string/yellow_card_button_name"
+        android:textColor="@color/all_text_color"
+        android:textSize="@dimen/all_text_size"/>
+
+      <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_button_goal"
+        android:background="@color/colorAccent"
+        android:onClick="increase_red_score_team_b"
+        android:text="@string/red_card_button_name"
+        android:textColor="@color/all_text_color"
+        android:textSize="@dimen/all_text_size"/>
+
+    </LinearLayout>
+
+  </LinearLayout>
+
+  <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_button_goal"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/colorAccent"
+    android:onClick="resetButton"
+    android:text="@string/reset_button"
+    android:textColor="@color/all_text_color"
+    android:textSize="@dimen/all_text_size"/>
+
+</LinearLayout>
+
