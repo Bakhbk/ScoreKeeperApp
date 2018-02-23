@@ -10,7 +10,7 @@ public class MainActivity extends AppCompatActivity {
 
   //////////SHOWING SCORES FOR TEAM A/////////
   //  Global integer for scoreTeamA
-  int scoreTeamA = 0;
+  private int scoreTeamA = 0;
   //  Global integer for yellowScoreTeamA
   int yellowScoreTeamA = 0;
   //  Global integer for yellowScoreTeamA
@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
   //////////SHOWING SCORES FOR TEAM B//////////
   //  Global integer for scoreTeamB
-  int scoreTeamB = 0;
+  private int scoreTeamB = 0;
   //  Global integer for yellowScoreTeamB
   int yellowScoreTeamB = 0;
   //  Global integer for yellowScoreTeamB
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
   }
 
   //  Increase scoreTeamA by one click in button score_team_a
-  public void increase_score_team_a(View v) {
+  public void increaseScoreTeamA(View v) {
     scoreTeamA += +1;
     displayScoreTeamA(scoreTeamA);
   }
@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
   }
 
   //  Increase yellowScoreTeamA by one click in button yellow_score_team_a
-  public void increase_yellow_score_team_a(View v) {
+  public void increaseYellowScoreTeamA(View v) {
     yellowScoreTeamA += +1;
     displayYellowScoreTeamA(yellowScoreTeamA);
   }
@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
   }
 
   //  Increase redScoreTeamA by one click in button red_score_team_a
-  public void increase_red_score_team_a(View v) {
+  public void increaseRedScoreTeamA (View v) {
     redScoreTeamA += +1;
     displayRedScoreTeamA(redScoreTeamA);
   }
@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
   }
 
   //  Increase scoreTeamA by one click in button score_team_b
-  public void increase_score_team_b(View v) {
+  public void increaseScoreTeamB(View v) {
     scoreTeamB += +1;
     displayScoreTeamB(scoreTeamB);
   }
@@ -105,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
   }
 
   //  Increase yellowScoreTeamB by one click in button yellow_score_team_b
-  public void increase_yellow_score_team_b(View v) {
+  public void increaseYellowScoreTeamB(View v) {
     yellowScoreTeamB += +1;
     displayYellowScoreTeamB(yellowScoreTeamB);
   }
@@ -117,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
   }
 
   //  Increase redScoreTeamB by one click in button red_score_team_b
-  public void increase_red_score_team_b(View v) {
+  public void increaseRedScoreTeamB(View v) {
     redScoreTeamB += +1;
     displayRedScoreTeamB(redScoreTeamB);
   }
